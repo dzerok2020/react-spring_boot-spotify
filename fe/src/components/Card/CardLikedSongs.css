@@ -1,0 +1,41 @@
+/* stylelint-disable selector-class-pattern */
+.card-liked-song {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(149.46deg,#450af5,#8e8ee5 99.16%);
+}
+
+.card-liked-song__item{
+  padding: 20px;
+}
+
+.card-liked-song__author,
+.card-liked-song__title {
+  text-transform: capitalize;
+}
+
+.card-liked-song__title {
+  opacity: 0.7;
+}
+
+.card-liked-song-title {
+  margin-bottom: 10px;
+}
+
+.card-liked-song-button {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transform: translateY(25%);
+}
+
+.card-liked-song:hover .card-liked-song-button {
+  opacity: 1;
+  transform: translateY(0%);
+}
